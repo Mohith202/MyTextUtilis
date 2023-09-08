@@ -36,7 +36,7 @@ export default function Navbar(prop) {
             <div className="collapse navbar-collapse" id="navbarSupportedContent" style={prop.mode === "light" ? style : style1} >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0" >
                 <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to="/MyTextUtilis">Home</Link>
+                  <a className="nav-link active" aria-current="page" hraf="/">Home</a>
                 </li>
                 </ul>
                 

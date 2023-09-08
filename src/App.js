@@ -42,8 +42,7 @@ function App() {
  
       <div style={mode === "dark" ? style1 : style2} >
         <Alert alert={alert} ></Alert>
-     <BrowserRouter>
-        <Navbar mode={mode} modeChange={modeChange} />
+     <Navbar mode={mode} modeChange={modeChange} />
         <TextForm heading=" ENTER THE TEXT " mode={mode}/>
      
       </div>
