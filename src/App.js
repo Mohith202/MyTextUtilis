@@ -3,9 +3,6 @@ import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import { useState } from 'react';
 import Alert from './components/Alert';
-import { BrowserRouter } from 'react-router-dom';
-import { Route,Routes } from "react-router";
-import About from "./components/about"
 
 
 function App() {
@@ -47,12 +44,8 @@ function App() {
         <Alert alert={alert} ></Alert>
      <BrowserRouter>
         <Navbar mode={mode} modeChange={modeChange} />
-      <Routes>
-        <Route path="/"  element={<TextForm heading=" ENTER THE TEXT " mode={mode} />}/>
-        <Route path="/aboutus" element={<About/>}></Route>
-      </Routes>
-     </BrowserRouter>
-            
+        <TextForm heading=" ENTER THE TEXT " mode={mode}/>
+     
       </div>
   );
 }

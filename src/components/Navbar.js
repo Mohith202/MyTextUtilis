@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useState } from 'react'
 import Alert from "./Alert";
-import { Link } from 'react-router-dom'
 
 
 
@@ -37,29 +36,11 @@ export default function Navbar(prop) {
             <div className="collapse navbar-collapse" id="navbarSupportedContent" style={prop.mode === "light" ? style : style1} >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0" >
                 <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to="./">Home</Link>
+                  <Link className="nav-link active" aria-current="page" to="/MyTextUtilis">Home</Link>
                 </li>
-                <li className="nav-item">
-    
-
-                  <Link className="nav-link" to="./aboutus">About US</Link>
-              
-                </li>
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Services We Offer
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li><a className="dropdown-item" href="/">Action</a></li>
-                    <li><a className="dropdown-item" href="/">Another action</a></li>
-                    <li><hr className="dropdown-divider" /></li>
-                    <li><a className="dropdown-item" href="/">Something else here</a></li>
-                  </ul>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link disabled" aria-disabled="true">Contact us</a>
-                </li>
-              </ul>
+                </ul>
+                
+                
               <div>
                 <button type="button"  className="btn btn-primary mx-1">Primary</button>
                 <button type="button" className="btn btn-success mx-1">Success</button>
